@@ -108,8 +108,8 @@ const Songs = () => {
       <Box className="top-songs" mb={4}>
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
           <Typography variant="h6">Top Albums</Typography>
-            <Button className="show-all-btn" onClick={handleTopCollapse}>
-                {topCollapsed ? "Collapse" : "Show All"}  
+            <Button onClick={handleTopCollapse}>
+                {topCollapsed ? "Show All" : "Collapse"}
             </Button>
 
 

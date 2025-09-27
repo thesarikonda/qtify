@@ -1,10 +1,28 @@
-.navbar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111; /* dark background, RGB < 50 */
-    width: 100%;
-    height: 75px;
-    padding: 0 32px;
+.navbar {
+  display: flex;
+  align-items: center;         /* vertical centering */
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 75px;
+  padding: 0 32px;
+}
+
+.navbar-logo {
+  margin-left: 16px;           /* ensures space on left */
+  height: 40px;                /* keeps it proportional */
+}
+
+.navbar-search {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-btn {
+  background-color: #000;        /* black background */
+  color: #1db954;                /* green text */
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
