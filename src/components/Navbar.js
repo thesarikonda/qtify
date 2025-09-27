@@ -6,8 +6,11 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <a href="/">
+        <img src={logo} alt="logo" className="navbar-logo" />
+      </a>
       {/* Logo */}
-      <img src={logo} alt="logo" className="navbar-logo" />
+      
 
       {/* Search Bar */}
       <input

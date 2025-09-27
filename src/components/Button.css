@@ -1,12 +1,13 @@
 .button {
-    background-color: #000;       /* black background */
-    color: #00ff00;               /* green text */
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    padding: 10px 16px;
-    margin: 14px;
-    width: 170px;                 /* corrected case */
-    height: 47px;                 /* corrected case */
-    font-size: medium;
+  color: var(--color-primary);
+  background-color: var(--color-black);
+  font-family: "Poppins";
+  padding: 10px 16px;
+  font-style: normal;
+  letter-spacing: 0.26px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 12px;
+  cursor: pointer;
 }
