@@ -118,14 +118,6 @@ const Songs = () => {
 
   return (
     <Box px={2}>
-      {/* Hero Section */}
-      <Box className="hero-section" textAlign="center" bgcolor="#000" color="#fff" py={8} mb={6}>
-        <Typography variant="h3" fontWeight="bold">
-          100 Thousand Songs, ad-free
-        </Typography>
-        <img src="/hero.png" alt="Hero" style={{ marginTop: 24, maxWidth: "100%", height: "auto" }} />
-      </Box>
-
       {/* Top Albums */}
       {topLoading ? <CircularProgress /> : topError ? <Typography color="error">{topError}</Typography> : renderAlbums(topAlbums, "Top Albums", topCollapsed, handleTopCollapse)}
 
