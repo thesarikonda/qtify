@@ -6,13 +6,18 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <nav className="navbar">
+      {/* Logo */}
       <img src={logo} alt="logo" className="navbar-logo" />
+
+      {/* Search Bar */}
       <input
         type="text"
-        placeholder="search a song"   
+        placeholder="search"  
         className="navbar-search"
       />
-      <Button className="navbar-btn">Give Feedback</Button>
+
+      {/* Feedback Button */}
+      <Button>Give Feedback</Button>  
     </nav>
   );
 };
