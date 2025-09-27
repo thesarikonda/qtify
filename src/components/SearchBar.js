@@ -1,21 +1,20 @@
-// Navbar.js
 import React from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
-import SearchBar from "./SearchBar";
 import Button from "./Button";
+import SearchBar from "./SearchBar"; // your search component
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+      {/* Logo */}
       <img src={logo} alt="logo" className="navbar-logo" />
-      
-      <SearchBar
-        placeholder="search a song"
-        className="navbar-search"
-      />
-      
-      <Button className="navbar-btn">Give Feedback</Button>
+
+      {/* Search Bar */}
+      <SearchBar placeholder="search a song" />
+
+      {/* Feedback Button */}
+      <Button>Give Feedback</Button>
     </nav>
   );
 };
