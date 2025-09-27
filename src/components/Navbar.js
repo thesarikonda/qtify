@@ -7,17 +7,17 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <nav className="navbar">               {/* class name the Cypress tests expect */}
-      <div className="navbar-left">
+      {/* <div className="navbar-left"> */}
         <img src={LogoSrc} alt="Qtify logo" className="logo" />
-      </div>
-
-      <div className="navbar-center">
+      {/* </div> */}
+{/* 
+      <div className="navbar-center"> */}
         <SearchBar search={"Search a song of your choice"} />
-      </div>
-
-      <div className="navbar-right">
+      {/* </div> */}
+{/* 
+      <div className="navbar-right"> */}
         <Button>Give Feedback</Button>
-      </div>
+      {/* </div> */}
     </nav>
   );
 };

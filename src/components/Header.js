@@ -16,9 +16,9 @@ const Header = () => {
         <>
             <Box id="navbar" display="flex" alignItems="center" justifyContent="space-between" bgcolor="primary.main" padding="0.5rem" width="100%">
 
-                <Box id="logo">
+                {/* <Box id="logo"> */}
                     <img src={logo} alt="logo" />
-                </Box>
+                {/* </Box> */}
 
                 <Box id="search-large-screens" display="flex" alignItems="center" justifyContent="center">
                     <input type="text" class="search-input" placeholder="Search a album of your choice"/>
@@ -33,12 +33,12 @@ const Header = () => {
                         <SearchIcon width="25%" display="none"/>
                     </Button>
                 </Box>
-
-                <Box id="feedback">
+{/* 
+                <Box id="feedback"> */}
                     <Button id="feedback-navbar-button">
                         <img src={feedback} alt="logo" />
                     </Button>
-                </Box>
+                {/* </Box> */}
             </Box>
             <Box className="hero-section" bgcolor="#111" padding="2rem" display="flex" alignItems="center" justifyContent="space-between">
                     <Box className="hero-text">
