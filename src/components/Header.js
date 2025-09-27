@@ -86,7 +86,8 @@ const Header = () => {
                 color: "#34C94B",                  
                 borderRadius: "0.375rem",
                 padding: "0.5rem",
-                fontFamily: "Poppins, sans-serif",  
+                fontFamily: "Poppins, sans-serif", 
+                cursor:"pointer"
                 }}
             >
                 Give Feedback
