@@ -1,22 +1,23 @@
 import React from "react";
-import "./Navbar.css";
-import logo from "../assets/logo.png";
+import "./Navbar.css";               // use plain CSS (global classes)
+import LogoSrc from "../assets/logo.png";
+import SearchBar from "./SearchBar";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      {/* Logo */}
-      <img src={logo} alt="logo" className="navbar-logo" />
+    <nav className="navbar">               {/* class name the Cypress tests expect */}
+      <div className="navbar-left">
+        <img src={LogoSrc} alt="Qtify logo" className="logo" />
+      </div>
 
-      {/* Search Bar */}
-      <input
-        type="text"
-        placeholder="search a song"
-        className="navbar-search"
-      />
+      <div className="navbar-center">
+        <SearchBar search={"Search a song of your choice"} />
+      </div>
 
-      {/* Feedback Button */}
-      <button className="navbar-btn">Give Feedback</button>
+      <div className="navbar-right">
+        <Button>Give Feedback</Button>
+      </div>
     </nav>
   );
 };
