@@ -111,10 +111,6 @@ const Songs = () => {
             <Button onClick={handleTopCollapse}>
                 {topCollapsed ? "Show All" : "Collapse"}
             </Button>
-
-
-
-
         </Box>
         {topLoading ? (
           <Box textAlign="center" mt={2}><CircularProgress /></Box>
