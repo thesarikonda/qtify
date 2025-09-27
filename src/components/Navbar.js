@@ -7,20 +7,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar-container">
-      {/* Logo */}
-      <div className="navbar-logo">
-        <img src={LogoImg} alt="logo" className="logo" />
-      </div>
-
-      {/* Search Bar */}
-      <div className="navbar-search">
-        <SearchBar search="Search a album of your choice" />
-      </div>
-
-      {/* Feedback Button */}
-      <div className="navbar-feedback">
+        <img src={LogoImg} alt="logo" />
+        <SearchBar search="search" />
         <Button className="navbar-button">Give Feedback</Button>
-      </div>
     </nav>
   );
 };
