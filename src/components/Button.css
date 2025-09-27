@@ -1,14 +1,12 @@
 .button {
-    background-color: var(--color-black);
-    color: var(--color-primary);
+    background-color: #000;       /* black background */
+    color: #00ff00;               /* green text */
     border-radius: 12px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     padding: 10px 16px;
     margin: 14px;
-    /* my extra from figma */
-    Width: 170px;
-    Height: 47px;
-    font-size:medium;
-
+    width: 170px;                 /* corrected case */
+    height: 47px;                 /* corrected case */
+    font-size: medium;
 }

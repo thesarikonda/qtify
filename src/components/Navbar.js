@@ -6,15 +6,21 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar-container">
       {/* Logo */}
-      <img src={LogoImg} alt="logo" className="logo" />
+      <div className="navbar-logo">
+        <img src={LogoImg} alt="logo" className="logo" />
+      </div>
 
       {/* Search Bar */}
-      <SearchBar search="search" />
+      <div className="navbar-search">
+        <SearchBar search="Search a album of your choice" />
+      </div>
 
       {/* Feedback Button */}
-      <Button>Give Feedback</Button>
+      <div className="navbar-feedback">
+        <Button className="navbar-button">Give Feedback</Button>
+      </div>
     </nav>
   );
 };

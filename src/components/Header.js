@@ -40,10 +40,17 @@ const Header = () => {
                     </Button>
                 </Box>
             </Box>
-
-            <Box className="hero-image" bgcolor="background.default" padding="2rem">
-                <img src={heroImage} alt="hero-image" />
+            <Box className="hero-section" bgcolor="#111" padding="2rem" display="flex" alignItems="center" justifyContent="space-between">
+                    <Box className="hero-text">
+                        <h1>100 Thousand Songs, ad-free</h1>
+                        <p>Enjoy music anytime, anywhere</p>
+                    </Box>
+                    <Box className="hero-image">
+                        <img src={heroImage} alt="hero-image" />
+                    </Box>
             </Box>
+
+
 
         </>
     )

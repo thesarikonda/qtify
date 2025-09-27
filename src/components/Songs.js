@@ -108,9 +108,11 @@ const Songs = () => {
       <Box className="top-songs" mb={4}>
         <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
           <Typography variant="h6">Top Albums</Typography>
-          <Button variant="outlined" onClick={handleTopCollapse}>
-            {topCollapsed ? "Show All" : "Collapse"}
-          </Button>
+            <Button variant="outlined" onClick={handleTopCollapse}>
+                {topCollapsed ? "Collapse" : "Show All"}
+            </Button>
+
+
         </Box>
         {topLoading ? (
           <Box textAlign="center" mt={2}><CircularProgress /></Box>
