@@ -1,21 +1,34 @@
 import React from "react";
-import "./Navbar.css";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 import logo from "../assets/logo.png";
-import Button from "./Button";
-import SearchBar from "./SearchBar"; // your search component
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <Box
+      component="nav"
+      className="navbar"
+      display="flex"
+      alignItems="center"
+      justifyContent="space-between"
+      px={4}
+      height="75px"
+      bgcolor="#1DB954"
+    >
       {/* Logo */}
       <img src={logo} alt="logo" className="navbar-logo" />
 
       {/* Search Bar */}
-      <SearchBar placeholder="search a song" />
+      <input
+        type="text"
+        placeholder="search a song"
+        className="navbar-search"
+      />
 
       {/* Feedback Button */}
-      <Button>Give Feedback</Button>
-    </nav>
+      <button className="navbar-btn">Give Feedback</button>
+    </Box>
   );
 };
 
