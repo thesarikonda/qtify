@@ -13,11 +13,14 @@ const Navbar = () => {
       
 
       {/* Search Bar */}
-      <input
+      <div>
+              <input
         type="text"
         placeholder="search"  
         className="navbar-search"
       />
+      </div>
+
 
       {/* Feedback Button */}
       <Button>Give Feedback</Button>  
