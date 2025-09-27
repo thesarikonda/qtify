@@ -14,32 +14,84 @@ const Header = () => {
 
     return (
         <>
-            <Box id="navbar" display="flex" alignItems="center" justifyContent="space-between" bgcolor="primary.main" padding="0.5rem" width="100%">
+            <div
+            style={{
+                backgroundColor: "#34C94B", 
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "1rem",
+            }}
+            >
+            <img src={logo} alt="qtify-logo" />
 
-                {/* <Box id="logo"> */}
-                    <img src={logo} alt="logo" />
-                {/* </Box> */}
+            <div style={{ position: "relative", width: "50%" }}>
+                <input
+                type="text"
+                placeholder="Search a album of your choice"
+                style={{
+                    backgroundColor: "#ffffff",       
+                    border: "2px solid #121212",     
+                    borderRadius: "0.375rem",
+                    padding: "0.5rem",
+                    paddingRight: "4rem",
+                    width: "100%",
+                    fontFamily: "Poppins, sans-serif",
+                }}
+                />
 
-                <Box id="search-large-screens" display="flex" alignItems="center" justifyContent="center">
-                    <input type="text" class="search-input" placeholder="Search a album of your choice"/>
-                    <Button class="search-button" display="flex" alignItems="center" justifyContent="center">
-                        <SearchIcon/>
-                    </Button>
-                </Box>
+                <div
+                style={{
+                    position: "absolute",
+                    right: "3rem",
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    width: "1px",
+                    height: "1.5rem",
+                    backgroundColor: "#ffffff",
+                    opacity: 0.6,
+                }}
+                ></div>
 
-                <Box id="search-small-screens" display="none" width="70%">
-                    <input type="text" class="search-input" display="none" width="75%" />
-                    <Button class="search-button" display="none" width="25%">
-                        <SearchIcon width="25%" display="none"/>
-                    </Button>
-                </Box>
-{/* 
-                <Box id="feedback"> */}
-                    <Button id="feedback-navbar-button">
-                        <img src={feedback} alt="logo" />
-                    </Button>
-                {/* </Box> */}
-            </Box>
+                <div
+                style={{
+                    position: "absolute",
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    width: "3rem",
+                    borderLeft: "2px solid #121212",
+                    borderTopRightRadius: "0.375rem",
+                    borderBottomRightRadius: "0.375rem",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: "pointer",
+                    transition: "background-color 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.1)";
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                }}
+                >
+                <SearchIcon />
+                </div>
+            </div>
+
+            <button
+                style={{
+                backgroundColor: "#121212",        
+                color: "#34C94B",                  
+                borderRadius: "0.375rem",
+                padding: "0.5rem",
+                fontFamily: "Poppins, sans-serif",  
+                }}
+            >
+                Give Feedback
+            </button>
+            </div>
             <Box className="hero-section" bgcolor="#111" padding="2rem" display="flex" alignItems="center" justifyContent="space-between">
                     <Box className="hero-text">
                         <h1>100 Thousand Songs, ad-free</h1>
