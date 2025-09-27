@@ -1,23 +1,22 @@
-// Navbar.js
 import React from "react";
-import "./Navbar.css";
-import logo from "../assets/logo.png";
-import SearchBar from "./SearchBar";
-import Button from "./Button";
+import styles from "./Navbar.css";
+import Logo from "../assets/logo.png";
+import SearchBar from "./SearchBar.js";
+import Button from "./Button.js";
 
 const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <img src={logo} alt="logo" className="navbar-logo" />
 
-      <SearchBar
-        placeholder="search a song"
-        className="navbar-search"
-      />
+    return (
+        <>
+            <nav className={styles.navbar}>
+                <Logo />
+                <SearchBar search={"Search a song of your choice"} />
+                <Button children={"Give Feedback"} />
+            </nav>
 
-      <Button className="navbar-btn">Give Feedback</Button>
-    </nav>
-  );
-};
+        </>
+
+    );
+}
 
 export default Navbar;
