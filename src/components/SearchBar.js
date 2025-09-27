@@ -1,16 +1,23 @@
+// Navbar.js
 import React from "react";
-import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
-import "./SearchBar.css"; // using your CSS
+import "./Navbar.css";
+import logo from "../assets/logo.png";
+import SearchBar from "./SearchBar";
+import Button from "./Button";
 
-const SearchBar = ({ search }) => {
+const Navbar = () => {
   return (
-    <form className="wrapper">
-      <input className="search" placeholder={search} />
-      <button className="searchButton" type="submit">
-        <SearchIcon />
-      </button>
-    </form>
+    <nav className="navbar">
+      <img src={logo} alt="logo" className="navbar-logo" />
+      
+      <SearchBar
+        placeholder="search a song"
+        className="navbar-search"
+      />
+      
+      <Button className="navbar-btn">Give Feedback</Button>
+    </nav>
   );
 };
 
-export default SearchBar;
+export default Navbar;
